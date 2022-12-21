@@ -1,0 +1,279 @@
+ACTIVITYDESCRIPTION,ACTIVITYID,PARENTACTIVITYID
+Absent / Offsite,A0401,A0400
+AccStat,A0505,A0500
+Acid Production,CS003,Con
+Additional Shift (Mine Maint),B0413,A0400
+Additional Shifts,A0411,A0400
+Alternate Duties,A0405,A0400
+Analytical Lab,CLAB1,Con
+Annual Leave,A0409,A0400
+Annual Leave (Mine Maint),B0409,A0400
+Annual Medical,A0402,A0400
+Assisting Operator,S0321,S0300
+Attendance (Communication),PR406,A0400
+Attendance (Drill Maint),PR405,A0400
+Attendance (Fixed Plant),PR402,A0400
+Attendance (MineElec),PR403,A0400
+Attendance (MineHoist),PR404,A0400
+Attendance (Miners),PR400,A0400
+Attendance (U/G Fleet),PR401,A0400
+Attending training Course/Conf,A0603,A0600
+Auto Tramming,M0812,M0804
+AWOL,A0410,A0400
+AWOL (Mine Maint),B0410,A0400
+Backfill,CON01,Con
+BACKFILL,PRCAF,M1112
+Backfill Administration,CB006,Con
+BACKFILL DOWNTIME,CB008,Con
+Belt Runner,1480,Rad
+Belt Running,S0311,S0300
+Beltreco Conveyor Belt Splicer,R0113,Rad
+Building Barricades U/G,M1008,m1000
+Business Analysis,COM01,Con
+Business Improvement,CON16,Con
+Cable Bolting,M0702,M0700
+CAF Testing,M1113,m1000
+Caf Wastage,M1117,m1000
+Capital Control,COM02,Con
+Civil Engineering,CENG1,Con
+Clark Ore Handling Operator,1473,Rad
+Clark Ore Handling Operator,R0117,Rad
+Cleaner,1445,Rad
+Commercial Admin,COM05,Con
+Commercial Dept,CON17,Con
+Comms Technician,1221,Rad
+Comms Technician,R0103,Rad
+Contracts,CSM05,Con
+Contracts - Maint Delivery,COS07,Con
+Conveyor Belt Splicer,1475,Rad
+Corefarm,1205,Rad
+Corefarm Worker,R0101,Rad
+Crushed Rock,CB002,Con
+Crusher Operator,1472,Rad
+Crusher Operator,P0101,P0100
+Crushing,P0100,P0100
+Delays,S0316,S0300
+Dev Jumbo Drilling,M0201,M0200
+Development,CM001,Con
+Development,PR203,M0203
+DEVELOPMENT DOWNTIME,M0708,M0700
+Development Nipper,M0202,M0200
+Dewatering,M1004,m1000
+DO NOT USE,1455,Rad
+DO NOT USE,1615,Rad
+DO NOT USE,AO590,A0600
+Drawing Office,CENG3,Con
+Drill & Blast,CM003,Con
+Drilling Pilot Holes,M0501,M0500
+Drilling Service Holes,M1006,m1000
+Dummy MP activity,LINK,null
+Dyno Nobel Explosives Handling,R0112,Rad
+ECAF Run Time,M1111,m1000
+Electrical Engineering,CENG4,Con
+Electrician,1220,Rad
+Electrician,R0102,Rad
+Electro Refining,CR001,Con
+Electro Winning,CR002,Con
+Engineering & Services,CON10,Con
+Environment,CSH04,Con
+"Environment, Hygeine & Safety",CON14,Con
+Environmental Lab,CLAB3,Con
+Equipment Checks,S0325,S0325
+Exploration,CG04,Con
+Explosives Handling,1245,Rad
+Face Charging,M0203,M0200
+Face Prep/Scaling,S0315,S0300
+Face Support,M0710,M0700
+FFW Testing,A0406,A0400
+Fill Holes,CB004,Con
+Fixed Plant,COS02,Con
+Fixed Plant Maintenance,R0104,Rad
+Fixing Misfires,M1009,m1000
+General House Maintenance,CHR03,Con
+Geologist,1250,Rad
+Geologist,R0121,Rad
+Geology,CON04,Con
+Geology,G0100,null
+Gold & Silver Production,CR003,Con
+Grade Control,G0104,G0100
+Grade Controller,1570,Rad
+Ground Support,M0700,null
+Grouting CT Bolts,M0706,M0700
+Haulage and Hoisting,M0800,null
+Hoisting,M0809,M0800
+HR,CON13,Con
+Human Resources,CHR02,Con
+Hydromet,CON07,Con
+Hydrometallurgical,CMH02,Con
+Information & Data,CPO02,Con
+Information Systems,CPO01,Con
+Instrument Process Control,CSM04,Con
+IT,COM03,Con
+Klinge Tyre Serviceman,R0114,Rad
+L/Year Diamond Driller,1210,Rad
+L/Year Diamond Driller,R0110,Rad
+Laboratory,CON18,Con
+Laundry,1612,Rad
+LOADHAUL-DOWNTIME,M0815,M0800
+Loading,M0801,M0800
+Long Term Planning,CLTP1,Con
+Longhole Chargeup,M0303,M0300
+Longhole Rising,M0301,M0300
+Longhole Rising - Production,M0305,M0300
+Longhole Stoping,M0302,M0300
+Maint Planning & Reliabiility,CON11,Con
+Major Projects,CON12,Con
+Mechanical Engineering,CENG2,Con
+Mechanical Services,CENG6,Con
+Medical Treatment,A0403,A0400
+Meeting,A0404,A0400
+Meshing,M0704,M0700
+Met Projects,CMET1,Con
+Metallurgical Lab,CLAB2,Con
+Mill,CON05,Con
+Mill / Smelter Admin,CMH03,Con
+Mill Stockpile,CB007,Con
+Milling,CMH01,Con
+Mine Clearance,A0202,A0200
+Mine Control/Modular/AutoTram,A0701,A0700
+Mine Geo Technical,CTS04,Con
+Mine Geology,CG01,Con
+Mine Geology,G0105,G0100
+Mine Induction,A0590,A0600
+Mine Maintenance,MA101,null
+Mine Ore Handling & Maint,CON03,Con
+Mine Planning,CTS02,Con
+Mine Survey,CTS01,Con
+Mine Surveying,M1100,m1000
+Mine Tech Serv Admin,CTS05,Con
+Mine Tech Services,CON00,Con
+Mine Ventilation,CTS03,Con
+Mines Rescue Training,A0604,A0600
+Mining,CON02,Con
+Misco Miner,M1000,m1000
+Monthly Drilled Tonnes,M0304,M0300
+Moving & Rig Set Up,S0322,S0300
+OEP Construction,1460,Rad
+Offsite Worker,1111,Rad
+Operator Trainer,A0601,A0600
+Optimisation,CPO04,Con
+Optimisation3 Phase 1,COPT1,Con
+Ore Reserves,CG02,Con
+Other Leave,A0412,A0400
+Other Leave (Mine Maint),B0412,A0400
+Pastoral Operations - East,CON19,Con
+Pivot Table Setup Record,PIVOT,PIVOT
+Placing Fill,M1112,m1000
+Planning,CSM02,Con
+Process Plant Worker,9999,Rad
+Processing Maintenance,CON09,Con
+Producing CAF,CB003,Con
+Production,CM002,Con
+Production Jumbo Downtime,M0300,M0200
+Production Prep,M0805,M0800
+Production Report,PR001,PR
+Projects,CENG7,Con
+Public Relations,CHR06,Con
+Pushing/Grouting CableBolts,M0707,M0700
+Quarry,CB001,Con
+Quarry Blasting,M1116,M1116
+QuickLime Usage,M1115,m1000
+Radiation,CSH03,Con
+Radiation Technician,1320,Rad
+Radiation Technician,R0120,Rad
+Rail Haulage,M0806,M0800
+Raise Bore & Diamond Drill,CM005,Con
+Raise Drill Reaming,PREAM,M0500
+Raise Driller,1515,Rad
+Ref / Hydro Admin,CR004,Con
+Refinery,CON08,Con
+Rehab Equiv Mtrs,M0709,M0700
+REHAB Ground Support,M0701,M0700
+Reliability,CSM03,Con
+Remote Tramming,M0802,M0800
+Research,CG03,Con
+Rig Fitter,1450,Rad
+Road Maintenance,S0309,S0300
+Rockbreaker Machine Usage,S0326,S0300
+Rockbreaking,S0324,S0300
+Rockdrill Technician,1240,Rad
+Safety / Health,CSH01,Con
+Safety Meetings,A0502,A0500
+Sandvik Rockdrill Technician,R0111,Rad
+Scaling,M0703,M0700
+Scheduling,CPO03,Con
+Secondary Breakage,M1001,m1000
+Security,CSH02,Con
+Services,CM004,Con
+Shaft Services,M1010,m1000
+Shaft Sink,M0504,M0500
+Shiftboss,1335,Rad
+Shotcreting,M0705,M0700
+Sick Leave,A0408,A0400
+Sick Leave (Mine Maint),B0408,A0400
+Site Ancillary Services,CHR05,Con
+Site Services,CENG5,Con
+Smelter,CON06,Con
+Smelter #1,CS001,Con
+Smelter #2,CS002,Con
+Stockpile Management,S0323,S0300
+Stope Charge Prep,S0318,S0300
+Stope Charging/Firing,S0317,S0300
+Stope Drill Site Prep,S0319,S0300
+Storeman,1580,Rad
+Storeman,R0109,Rad
+Supply,COM04,Con
+Supply,CON15,Con
+Support Services,S0300,null
+Surf Fix Plant W/shop Services,COS06,Con
+Surface Backfill Op,1510,Rad
+Surface Backfill Operator,R0115,Rad
+Surface Belt Conveying,M0814,M0800
+Surface Crushing,M1114,m1000
+Surface Electrical,CSM01,Con
+Surface Fixed Plant,COS05,Con
+Surface Fleet,COS04,Con
+Surface General,1391,Rad
+Surface General,1392,Rad
+Surface General Maintenance,R0108,Rad
+Surface Pilot Holes,M0505,M0500
+Surface Raise Drill Reaming,M0503,M0500
+Surface Raise Drill Reaming,M0506,M0500
+Surface Rockfill,M0810,M0800
+Surface Rockfilling,CB005,Con
+Surface Stockpile Rehandle,M1110,m1000
+Surface Workshop Fitter,1235,Rad
+Surface Workshop Fitter,R0107,Rad
+Surveyor,1340,Rad
+Surveyor,R0119,Rad
+Tele-Remote Tramming,M0803,M0800
+Town Office,CHR01,Con
+Training,A0600,A0600
+Tramming,M0804,M0800
+Trucking,M0807,M0800
+TRUCKING - SURFACE,M0816,M0800
+Tyre Serviceman,1476,Rad
+U/G Crusher Operator,R0116,Rad
+U/G Electrical,COS03,Con
+U/G Fixed Plant Maintenance,1225,Rad
+U/G Fleet,COS01,Con
+U/G General Maintenance,1232,Rad
+U/G General Maintenance,R0106,Rad
+U/G Rail Level Maintenance,1231,Rad
+U/G Raise Drill Reaming,M0502,M0500
+U/G Rockfill,PR112,m1000
+U/G Shift Supervisor,A0700,A0700
+U/G Sludge Drilling,G0414,null
+U/G Workshop Fitter,1230,Rad
+U/G Workshop Fitter,R0105,Rad
+Undergound Diamond Drilling,G0402,G0400
+Underground Belt Conveying,M0808,M0800
+Vacant House Maintenance,CHR04,Con
+Vent Bag Repairs,1610,Rad
+Vent Work,M1002,m1000
+Ventilation (major),M1003,m1000
+Ventilation Officer,1540,Rad
+Ventilation Officer,R0122,Rad
+Watering Roads,S0310,S0300
+WMC Surface Employee,1390,Rad
+WMC Surface Employee,R0118,Rad

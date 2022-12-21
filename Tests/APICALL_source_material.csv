@@ -1,0 +1,72 @@
+﻿MaterialActiveIndicator,MaterialCode,MaterialDescription,MaterialTypeCode,SiteCode
+-1,AGG -20/10,20/10 Aggregate,W,ODM
+-1,AGG -40/20,40/20 Aggregate,W,ODM
+-1,BCS,BC Steel/Waste,W,ODM
+-1,BF,Backfill ROCKFILL,O,ODM
+-1,BL,Blasted,W,ODM
+-1,BL ACC,Blasted Acc,W,ODM
+-1,CAF,CAF,FILLCOMP,ODM
+-1,CEMENT,Cement,FILLCOMP,ODM
+-1,CL,CLAY,W,ODM
+-1,CR,CLARK ROPE,W,ODM
+-1,DESLIM,Deslimed sand,FILLCOMP,ODM
+-1,DSAND,Dune Sand,FILLCOMP,ODM
+-1,FLYASH,Flyash,FILLCOMP,ODM
+-1,HG,High Grade,O,ODM
+-1,LG,Low Grade,O,ODM
+-1,LS,Quarry Limestone,W,ODM
+-1,LS -100mm,Quarry Limestone (-100mm),W,ODM
+-1,LS -10mm,LS -10mm,W,ODM
+-1,LS -200mm,Quarry Limestone (-200mm),W,ODM
+-1,LS -20mm,Quarry Limestone (-20mm),W,ODM
+-1,LS -20mm A,LS -20mm A,W,ODM
+-1,LS -20mm B,LS -20mm B,W,ODM
+-1,LS -225mm,Quarry Limestone (-225mm),W,ODM
+-1,LS -250mm,Quarry Limestone (-250mm),W,ODM
+-1,LS -40mm,Quarry Limestone (-40mm),W,ODM
+-1,LS -7/10mm,LS -7/10mm,W,ODM
+-1,LS -75mm,Quarry Limestone (-75mm),W,ODM
+-1,MULL - CR,Quarry crushed mullock,W,ODM
+-1,MULL -225m,U/G Waste (Mullock -225mm),W,ODM
+-1,MULL 40/20,U/G Waste (Mullock -40/20mm),W,ODM
+-1,MULL -40mm,U/G Waste (Mullock -40mm),W,ODM
+-1,MULL -5mm,U/G Waste (Mullock -5mm),W,ODM
+-1,MULL -UNCR,UG Mullock Uncrushed,W,ODM
+-1,MULLOCK,Quarry Waste (mullock),W,ODM
+-1,O,Ore,O,ODM
+-1,O,Ore,O,ODP
+-1,O -225mm,O -225mm ,W,ODM
+-1,OS,Oversize,W,ODM
+-1,OVERBURDEN,Quarry Overburden,W,ODM
+-1,PMR,Planned mining Reserve,PMR,ODM
+-1,QL,QuickLime,FILLCOMP,ODM
+-1,QU,Quartzite,W,ODM
+-1,QU - 20mm,Quartzite - 20mm,W,ODM
+-1,QU -225mm,Quartzite - 225mm,W,ODM
+-1,R,Roadbase,W,ODM
+-1,RA -75mm,Rock Armour [-75mm],W,ODM
+-1,RC,RAISE CUTTINGS,W,ODM
+-1,S,Sand,W,ODM
+-1,SC -10mm,10mm SCALPS,W,ODM
+-1,SC -20mm,20mm SCALPS,W,ODM
+-1,SC -225mm,225mm SCALPS,W,ODM
+-1,SC -40mm,40mm SCALPS,W,ODM
+-1,SC -75mm,75mm SCALPS,W,ODM
+-1,SCF -20mm,SC FINES 20MM,W,ODM
+-1,SCF -40mm,SC FINES 40mm,W,ODM
+-1,SH,Shale,W,ODM
+-1,SS,Sandstone,W,ODM
+-1,T,Tails,O,ODM
+-1,TDECBL,TDEC Blasted,W,ODM
+-1,TS,TOP SOIL,W,ODM
+-1,U,Unknown,U,ODM
+-1,US,Unscreened Sand,W,ODM
+-1,W,Waste,W,ODM
+-1,W,Waste,W,ODP
+-1,WC,Waste CAF,W,ODM
+-1,WR,WR Waste Rockfill,W,ODM
+-1,WS,Waste Sand,W,ODM
+-1,YS,Yellow Sand,W,ODM
+0,Broken HG,Broken HG,O,ODM
+0,L,Don't use,U,ODM
+0,RX,ZZ,W,ODM

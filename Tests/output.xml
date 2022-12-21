@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.3 on win32)" generated="20221207 11:40:55.957" rpa="false" schemaversion="3">
+<suite id="s1" name="Set Global Variable" source="C:\Users\sharvive\PycharmProjects\pythonProject\RobotFramework\tests\set_global_variable.robot">
+<test id="s1-t1" name="Test Case_1: Validate successful login" line="17">
+<kw name="Open the browser with snowflake URL">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Edge</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221207 11:40:56.568" level="INFO">Creating an instance of the Edge WebDriver.</msg>
+<status status="PASS" starttime="20221207 11:40:56.568" endtime="20221207 11:41:03.437"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221207 11:41:03.438" level="INFO">Opening url 'https://bhp-sydney.privatelink.snowflakecomputing.com/console/login#/'</msg>
+<status status="PASS" starttime="20221207 11:41:03.438" endtime="20221207 11:41:04.454"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221207 11:41:04.454" endtime="20221207 11:41:04.630"/>
+</kw>
+<status status="PASS" starttime="20221207 11:40:56.567" endtime="20221207 11:41:04.630"/>
+</kw>
+<kw name="wait until element is visible and sign in">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.sso-login-button</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:41:04.631" endtime="20221207 11:41:05.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.sso-login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:05.427" level="INFO">Clicking element 'css:.sso-login-button'.</msg>
+<status status="PASS" starttime="20221207 11:41:05.427" endtime="20221207 11:41:05.504"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221207 11:41:05.504" endtime="20221207 11:41:05.508"/>
+</kw>
+<status status="PASS" starttime="20221207 11:41:04.631" endtime="20221207 11:41:05.508"/>
+</kw>
+<status status="PASS" starttime="20221207 11:40:56.566" endtime="20221207 11:41:05.509"/>
+</test>
+<test id="s1-t2" name="Test Case_2: Change role to SNOWFLAKE_READER_DEV" line="21">
+<kw name="click on the user and switch role to SNOWFLAKE_READER_DEV">
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:08.525" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:05.512" endtime="20221207 11:41:08.525"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.x-btn-arrow-right</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:41:08.525" endtime="20221207 11:41:11.487"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.x-btn-arrow-right</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:11.488" level="INFO">Clicking element 'css:.x-btn-arrow-right'.</msg>
+<status status="PASS" starttime="20221207 11:41:11.488" endtime="20221207 11:41:11.581"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:14.584" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:11.581" endtime="20221207 11:41:14.584"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:.menu-item-icon-right_1vqg841</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:41:14.584" endtime="20221207 11:41:14.618"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.menu-item-icon-right_1vqg841</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:14.618" level="INFO">Clicking element 'css:.menu-item-icon-right_1vqg841'.</msg>
+<status status="PASS" starttime="20221207 11:41:14.618" endtime="20221207 11:41:14.661"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:17.673" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:14.661" endtime="20221207 11:41:17.673"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1327"]/div/div[2]/div[2]/div[1]/div/div[2]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:41:17.673" endtime="20221207 11:41:17.714"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1327"]/div/div[2]/div[2]/div[1]/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:17.714" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1327"]/div/div[2]/div[2]/div[1]/div/div[2]'.</msg>
+<status status="PASS" starttime="20221207 11:41:17.714" endtime="20221207 11:41:17.778"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:20.786" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:17.778" endtime="20221207 11:41:20.786"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[7]/div[1]/div[4]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:41:20.787" endtime="20221207 11:41:22.336"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[7]/div[1]/div[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:22.337" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[7]/div[1]/div[4]'.</msg>
+<status status="PASS" starttime="20221207 11:41:22.337" endtime="20221207 11:41:22.427"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:25.438" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:22.427" endtime="20221207 11:41:25.438"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sleet-component-1187"]/div/div/div[2]/div[3]/span/div/div/div/div/form/div[1]/div/div[2]/div/span</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:41:25.438" endtime="20221207 11:41:25.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sleet-component-1187"]/div/div/div[2]/div[3]/span/div/div/div/div/form/div[1]/div/div[2]/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:25.495" level="INFO">Clicking element 'xpath=//*[@id="sleet-component-1187"]/div/div/div[2]/div[3]/span/div/div/div/div/form/div[1]/div/div[2]/div/span'.</msg>
+<status status="PASS" starttime="20221207 11:41:25.495" endtime="20221207 11:41:25.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:28.554" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:25.547" endtime="20221207 11:41:28.554"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:stylesSelectDropdown__opener_____Isx</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:41:28.554" endtime="20221207 11:41:28.596"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:stylesSelectDropdown__opener_____Isx</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:28.597" level="INFO">Clicking element 'class:stylesSelectDropdown__opener_____Isx'.</msg>
+<status status="PASS" starttime="20221207 11:41:28.596" endtime="20221207 11:41:28.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:31.698" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:28.690" endtime="20221207 11:41:31.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(1) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; span &gt; div &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input</arg>
+<arg>SNOWFLAKE_READER_DEV</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:31.699" level="INFO">Typing text 'SNOWFLAKE_READER_DEV' into text field 'css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(1) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; span &gt; div &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:41:31.698" endtime="20221207 11:41:32.057"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:34.070" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:32.057" endtime="20221207 11:41:34.070"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(1) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; span &gt; div &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221207 11:41:34.071" level="INFO">Sending key(s) ('RETURN',) to css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(1) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; span &gt; div &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input element.</msg>
+<msg timestamp="20221207 11:41:34.391" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20221207 11:41:34.391" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221207 11:41:34.070" endtime="20221207 11:41:34.488"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:37.502" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:34.488" endtime="20221207 11:41:37.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(2) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; div &gt; div:nth-child(1) &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input</arg>
+<arg>DEFAULT</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:37.503" level="INFO">Typing text 'DEFAULT' into text field 'css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(2) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; div &gt; div:nth-child(1) &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:41:37.503" endtime="20221207 11:41:37.656"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(2) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; div &gt; div:nth-child(1) &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221207 11:41:37.657" level="INFO">Sending key(s) ('RETURN',) to css:#sleet-component-1187 &gt; div &gt; div &gt; div.styles__sql-worksheet___RPnn_ &gt; div.styles__context-menu___KOw8b &gt; span &gt; div &gt; div &gt; div &gt; div &gt; form &gt; div:nth-child(2) &gt; div &gt; div.styles__line-item-value___Jp_wv &gt; div &gt; div:nth-child(1) &gt; div.stylesSelectDropdown__select-wrapper___h3D2f &gt; div &gt; div &gt; div.react-selectize-search-field-and-selected-values &gt; input element.</msg>
+<msg timestamp="20221207 11:41:37.954" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20221207 11:41:37.955" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221207 11:41:37.656" endtime="20221207 11:41:37.994"/>
+</kw>
+<status status="PASS" starttime="20221207 11:41:05.512" endtime="20221207 11:41:37.994"/>
+</kw>
+<status status="PASS" starttime="20221207 11:41:05.511" endtime="20221207 11:41:37.994"/>
+</test>
+<test id="s1-t3" name="Test case_3: Open worksheet for RAW and QA layer" line="24">
+<kw name="open existing worksheet for RAW layer">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:40.008" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:37.996" endtime="20221207 11:41:40.009"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<var>${var_1}</var>
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<msg timestamp="20221207 11:41:40.097" level="INFO">${var_1} = None</msg>
+<status status="PASS" starttime="20221207 11:41:40.009" endtime="20221207 11:41:40.098"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${var_1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:41:40.099" level="INFO">${var_1} = None</msg>
+<status status="PASS" starttime="20221207 11:41:40.098" endtime="20221207 11:41:40.099"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:40.100" level="INFO">Clicking element 'css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button'.</msg>
+<status status="PASS" starttime="20221207 11:41:40.099" endtime="20221207 11:41:40.283"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:42.285" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:40.283" endtime="20221207 11:41:42.285"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:41:42.285" endtime="20221207 11:41:42.348"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:42.349" level="INFO">Clicking element 'css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)'.</msg>
+<status status="PASS" starttime="20221207 11:41:42.348" endtime="20221207 11:41:42.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:41:44.743" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:42.728" endtime="20221207 11:41:44.743"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:41:44.743" endtime="20221207 11:41:44.792"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:44.793" level="INFO">Clicking element 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:41:44.792" endtime="20221207 11:41:44.886"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<arg>weekly_report_stopegeo_raw</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 11:41:44.886" level="INFO">Typing text 'weekly_report_stopegeo_raw' into text field 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:41:44.886" endtime="20221207 11:41:58.100"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:00.102" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:41:58.100" endtime="20221207 11:42:00.102"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[3]/div[1]/div/div/div[2]/div/div[1]/div/div/div/div/div/div/div/span</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:00.102" endtime="20221207 11:42:00.146"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[3]/div[1]/div/div/div[2]/div/div[1]/div/div/div/div/div/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:00.147" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div[3]/div[1]/div/div/div[2]/div/div[1]/div/div/div/div/div/div/div/span'.</msg>
+<status status="PASS" starttime="20221207 11:42:00.147" endtime="20221207 11:42:00.554"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:02.560" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:00.554" endtime="20221207 11:42:02.560"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:02.560" endtime="20221207 11:42:02.595"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:02.595" level="INFO">Clicking element 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button'.</msg>
+<status status="PASS" starttime="20221207 11:42:02.595" endtime="20221207 11:42:03.221"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:05.224" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:03.222" endtime="20221207 11:42:05.224"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:05.224" endtime="20221207 11:42:05.260"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:05.261" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre'.</msg>
+<status status="PASS" starttime="20221207 11:42:05.260" endtime="20221207 11:42:05.310"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:07.313" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:05.310" endtime="20221207 11:42:07.313"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:42:07.313" endtime="20221207 11:42:07.345"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:07.346" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img'.</msg>
+<status status="PASS" starttime="20221207 11:42:07.345" endtime="20221207 11:42:07.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:09.433" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:07.425" endtime="20221207 11:42:09.433"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:09.434" endtime="20221207 11:42:09.468"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:09.468" level="INFO">Clicking element 'xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:09.468" endtime="20221207 11:42:09.547"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:11.555" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:09.547" endtime="20221207 11:42:11.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[3]/div[2]/div/div[2]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:11.556" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[3]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20221207 11:42:11.556" endtime="20221207 11:42:11.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:13.616" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:11.610" endtime="20221207 11:42:13.616"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:13.617" endtime="20221207 11:42:13.654"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:13.654" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:13.654" endtime="20221207 11:42:13.723"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:14.727" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221207 11:42:13.724" endtime="20221207 11:42:14.727"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221207 11:42:14.727" endtime="20221207 11:42:15.245"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221207 11:42:15.245" endtime="20221207 11:42:15.263"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:15.263" endtime="20221207 11:42:15.299"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:15.299" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20221207 11:42:15.299" endtime="20221207 11:42:15.346"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${raw_results}</var>
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:15.378" level="INFO">${raw_results} = DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL_L...</msg>
+<status status="PASS" starttime="20221207 11:42:15.347" endtime="20221207 11:42:15.378"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:16.391" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221207 11:42:15.378" endtime="20221207 11:42:16.391"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:16.391" endtime="20221207 11:42:16.427"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:16.427" level="INFO">Clicking button 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:16.427" endtime="20221207 11:42:16.512"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{raw_results_list}</var>
+<arg>${raw_results}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:16.513" level="INFO">@{raw_results_list} = [ DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:16.512" endtime="20221207 11:42:16.513"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${raw_results_list}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:42:16.514" level="INFO">${raw_results_list} = ['DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:16.513" endtime="20221207 11:42:16.514"/>
+</kw>
+<kw name="Get Line Count" library="String">
+<var>${get_raw_results_lines}</var>
+<arg>@{raw_results_list}</arg>
+<doc>Returns and logs the number of lines in the given string.</doc>
+<msg timestamp="20221207 11:42:16.515" level="INFO">145 lines</msg>
+<msg timestamp="20221207 11:42:16.515" level="INFO">${get_raw_results_lines} = 145</msg>
+<status status="PASS" starttime="20221207 11:42:16.514" endtime="20221207 11:42:16.515"/>
+</kw>
+<kw name="Get Line" library="String">
+<var>${get_raw_results_linenumber}</var>
+<arg>@{raw_results_list}</arg>
+<arg>100</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<msg timestamp="20221207 11:42:16.515" level="INFO">${get_raw_results_linenumber} = 20221115,036_ORN_534_545_STP,11709.05373,1.967029,1.057591,1.312724,1.498433029,0.926673,0.926673,0.5099926846,22.549375,44.215095,0.5099926846,0.354306,3.392957,0.210785,0.554891,31.804089,155,42,49,...</msg>
+<status status="PASS" starttime="20221207 11:42:16.515" endtime="20221207 11:42:16.515"/>
+</kw>
+<kw name="Get Lines Containing String" library="String">
+<var>${get_raw_results_lines_partial}</var>
+<arg>@{raw_results_list}</arg>
+<arg>STOPE_NAME</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20221207 11:42:16.515" level="INFO">1 out of 145 lines matched</msg>
+<msg timestamp="20221207 11:42:16.515" level="INFO">${get_raw_results_lines_partial} = DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL_L...</msg>
+<status status="PASS" starttime="20221207 11:42:16.515" endtime="20221207 11:42:16.516"/>
+</kw>
+<kw name="Get Lines Containing String" library="String">
+<var>${get_raw_results_lines_partial_1}</var>
+<arg>@{raw_results_list}</arg>
+<arg>032_EMR_314_524_STP</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20221207 11:42:16.516" level="INFO">3 out of 145 lines matched</msg>
+<msg timestamp="20221207 11:42:16.516" level="INFO">${get_raw_results_lines_partial_1} = 20221107,032_EMR_314_524_STP,-1482.142342,2.86838,0.694255,1.266377,2.265028503,0,0,0.4269382231,18.975616,44.445812,0.4269382231,0.758783,6.046764,0.497754,1.310339,25.088112,220,31,37,0,3
+20221109,0...</msg>
+<status status="PASS" starttime="20221207 11:42:16.516" endtime="20221207 11:42:16.516"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{lines_raw_results}</var>
+<arg>${get_raw_results_lines}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:16.516" level="INFO">@{lines_raw_results} = [ 145 ]</msg>
+<status status="PASS" starttime="20221207 11:42:16.516" endtime="20221207 11:42:16.516"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${lines_raw_results}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:42:16.517" level="INFO">${lines_raw_results} = [145]</msg>
+<status status="PASS" starttime="20221207 11:42:16.516" endtime="20221207 11:42:16.517"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{linenumber_raw_result}</var>
+<arg>${get_raw_results_linenumber}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:16.517" level="INFO">@{linenumber_raw_result} = [ 20221115,036_ORN_534_545_STP,11709.05373,1.967029,1.057591,1.312724,1.498433029,0.926673,0.926673,0.5099926846,22.549375,44.215095,0.5099926846,0.354306,3.392957,0.210785,0.554891,31.804089,155,42,4...</msg>
+<status status="PASS" starttime="20221207 11:42:16.517" endtime="20221207 11:42:16.517"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${linenumber_raw_result}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:42:16.517" level="INFO">${linenumber_raw_result} = ['20221115,036_ORN_534_545_STP,11709.05373,1.967029,1.057591,1.312724,1.498433029,0.926673,0.926673,0.5099926846,22.549375,44.215095,0.5099926846,0.354306,3.392957,0.210785,0.554891,31.804089,155,42,4...</msg>
+<status status="PASS" starttime="20221207 11:42:16.517" endtime="20221207 11:42:16.517"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{multiple_raw_results_partial}</var>
+<arg>${get_raw_results_lines_partial}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:16.518" level="INFO">@{multiple_raw_results_partial} = [ DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:16.517" endtime="20221207 11:42:16.518"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${multiple_raw_results_partial}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:42:16.518" level="INFO">${multiple_raw_results_partial} = ['DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:16.518" endtime="20221207 11:42:16.518"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{multiple_raw_results_partial_1}</var>
+<arg>${get_raw_results_lines_partial_1}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:16.518" level="INFO">@{multiple_raw_results_partial_1} = [ 20221107,032_EMR_314_524_STP,-1482.142342,2.86838,0.694255,1.266377,2.265028503,0,0,0.4269382231,18.975616,44.445812,0.4269382231,0.758783,6.046764,0.497754,1.310339,25.088112,220,31,37,0,3
+20221109...</msg>
+<status status="PASS" starttime="20221207 11:42:16.518" endtime="20221207 11:42:16.518"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${multiple_raw_results_partial_1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221207 11:42:16.519" level="INFO">${multiple_raw_results_partial_1} = ['20221107,032_EMR_314_524_STP,-1482.142342,2.86838,0.694255,1.266377,2.265028503,0,0,0.4269382231,18.975616,44.445812,0.4269382231,0.758783,6.046764,0.497754,1.310339,25.088112,220,31,37,0,3\n2022110...</msg>
+<status status="PASS" starttime="20221207 11:42:16.518" endtime="20221207 11:42:16.519"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:18.524" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:16.519" endtime="20221207 11:42:18.524"/>
+</kw>
+<status status="PASS" starttime="20221207 11:41:37.996" endtime="20221207 11:42:18.525"/>
+</kw>
+<kw name="open existing worksheet for QA layer">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:18.526" endtime="20221207 11:42:18.564"/>
+</kw>
+<kw name="Get Variable Value" library="BuiltIn">
+<arg>${var_1}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="PASS" starttime="20221207 11:42:18.565" endtime="20221207 11:42:18.565"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:18.565" level="INFO">Clicking element 'css:#sleet-component-1187 &gt; div &gt; div &gt; div.style__tab-bar___gp1ot &gt; div.style__control___WWaOg &gt; div.style__control-child___KuDMk.style__control-dropdown___NkvU2 &gt; div.inline-icon-button'.</msg>
+<status status="PASS" starttime="20221207 11:42:18.565" endtime="20221207 11:42:18.620"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:20.632" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:18.620" endtime="20221207 11:42:20.633"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:20.633" endtime="20221207 11:42:20.669"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:20.669" level="INFO">Clicking element 'css:#sleet-component-1187 &gt; div &gt; span &gt; div &gt; div &gt; div &gt; div &gt; div:nth-child(1)'.</msg>
+<status status="PASS" starttime="20221207 11:42:20.669" endtime="20221207 11:42:20.766"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:22.772" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:20.767" endtime="20221207 11:42:22.773"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:22.773" endtime="20221207 11:42:22.830"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:22.830" level="INFO">Clicking element 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:42:22.830" endtime="20221207 11:42:22.884"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input</arg>
+<arg>weekly_report_stopegeo_qa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:22.884" level="INFO">Typing text 'weekly_report_stopegeo_qa' into text field 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div:nth-child(2) &gt; div &gt; div &gt; div.SideTabPanel__container____Dek6.styles__container___oj4Qq &gt; div.SideTabPanel__active-panel___nHvuD.styles__active-panel____TVAp &gt; div &gt; div &gt; div &gt; div.DataTable__table-config-no-edge___eAdpq &gt; div.DataTable__input-container___xSdJ5 &gt; input'.</msg>
+<status status="PASS" starttime="20221207 11:42:22.884" endtime="20221207 11:42:28.929"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:32.939" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:28.929" endtime="20221207 11:42:32.939"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[1]/label/div[1]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:32.940" endtime="20221207 11:42:32.976"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[1]/label/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:32.976" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[3]/div/div/div/div[2]/div/div/div[1]/label/div[1]'.</msg>
+<status status="PASS" starttime="20221207 11:42:32.976" endtime="20221207 11:42:33.240"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:36.244" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:33.240" endtime="20221207 11:42:36.245"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:36.246" endtime="20221207 11:42:36.295"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:36.296" level="INFO">Clicking element 'css:#ext-element-1 &gt; div:nth-child(3) &gt; div &gt; div &gt; div &gt; div.footer_1g8ixvv-o_O-absoluteFooter_ay4wjb-o_O-footer_d1fb1e &gt; div:nth-child(1) &gt; div:nth-child(1) &gt; button'.</msg>
+<status status="PASS" starttime="20221207 11:42:36.295" endtime="20221207 11:42:36.657"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:38.664" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:36.657" endtime="20221207 11:42:38.664"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:38.665" endtime="20221207 11:42:38.696"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:38.696" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[2]/div/div[6]/div[1]/div/div/div/div[5]/div/pre'.</msg>
+<status status="PASS" starttime="20221207 11:42:38.696" endtime="20221207 11:42:38.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:40.745" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:38.739" endtime="20221207 11:42:40.745"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221207 11:42:40.746" endtime="20221207 11:42:40.779"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:40.780" level="INFO">Clicking element 'xpath://*[@id="sleet-component-1187"]/div/div/div[2]/div[2]/div[1]/div[1]/div/div[1]/div[2]/button/img'.</msg>
+<status status="PASS" starttime="20221207 11:42:40.779" endtime="20221207 11:42:40.970"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:42.984" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:40.970" endtime="20221207 11:42:42.984"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:42.984" endtime="20221207 11:42:43.017"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:43.017" level="INFO">Clicking element 'xpath://*[@id="sql-worksheet-result-pane-content"]/div[3]/div/div[1]/div[2]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:43.017" endtime="20221207 11:42:43.086"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:45.092" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:43.086" endtime="20221207 11:42:45.092"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[3]/div[2]/div/div[2]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:45.093" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[3]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20221207 11:42:45.093" endtime="20221207 11:42:45.166"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:47.171" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:45.166" endtime="20221207 11:42:47.171"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:47.171" endtime="20221207 11:42:47.221"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:47.221" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:47.221" endtime="20221207 11:42:47.334"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:49.344" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:47.334" endtime="20221207 11:42:49.344"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221207 11:42:49.345" endtime="20221207 11:42:49.623"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221207 11:42:49.623" endtime="20221207 11:42:49.643"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:49.643" endtime="20221207 11:42:49.673"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:49.673" level="INFO">Clicking element 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20221207 11:42:49.673" endtime="20221207 11:42:49.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:51.719" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221207 11:42:49.713" endtime="20221207 11:42:51.719"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${qa_results}</var>
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[2]/div</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:51.744" level="INFO">${qa_results} = DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL_L...</msg>
+<status status="PASS" starttime="20221207 11:42:51.719" endtime="20221207 11:42:51.744"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221207 11:42:52.751" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221207 11:42:51.744" endtime="20221207 11:42:52.751"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221207 11:42:52.751" endtime="20221207 11:42:52.784"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221207 11:42:52.784" level="INFO">Clicking button 'xpath://*[@id="ext-element-1"]/div[5]/div/div/div/div[3]/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20221207 11:42:52.784" endtime="20221207 11:42:52.859"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{qa_results_list}</var>
+<arg>${qa_results}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:52.860" level="INFO">@{qa_results_list} = [ DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:52.859" endtime="20221207 11:42:52.860"/>
+</kw>
+<kw name="Get Line Count" library="String">
+<var>${get_qa_results_lines}</var>
+<arg>@{qa_results_list}</arg>
+<doc>Returns and logs the number of lines in the given string.</doc>
+<msg timestamp="20221207 11:42:52.860" level="INFO">145 lines</msg>
+<msg timestamp="20221207 11:42:52.860" level="INFO">${get_qa_results_lines} = 145</msg>
+<status status="PASS" starttime="20221207 11:42:52.860" endtime="20221207 11:42:52.860"/>
+</kw>
+<kw name="Get Line" library="String">
+<var>${get_qa_results_linenumber}</var>
+<arg>@{qa_results_list}</arg>
+<arg>100</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<msg timestamp="20221207 11:42:52.861" level="INFO">${get_qa_results_linenumber} = 20221115,036_ORN_534_545_STP,11709.05373,1.967029,1.057591,1.312724,1.498433029,0.926673,0.926673,0.5099926846,22.549375,44.215095,0.5099926846,0.354306,3.392957,0.210785,0.554891,31.804089,155,42,49,...</msg>
+<status status="PASS" starttime="20221207 11:42:52.860" endtime="20221207 11:42:52.861"/>
+</kw>
+<kw name="Get Lines Containing String" library="String">
+<var>${get_qa_results_lines_partial}</var>
+<arg>@{qa_results_list}</arg>
+<arg>STOPE_NAME</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20221207 11:42:52.861" level="INFO">1 out of 145 lines matched</msg>
+<msg timestamp="20221207 11:42:52.861" level="INFO">${get_qa_results_lines_partial} = DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL_L...</msg>
+<status status="PASS" starttime="20221207 11:42:52.861" endtime="20221207 11:42:52.861"/>
+</kw>
+<kw name="Get Lines Containing String" library="String">
+<var>${get_qa_results_lines_partial_1}</var>
+<arg>@{qa_results_list}</arg>
+<arg>032_EMR_314_524_STP</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20221207 11:42:52.861" level="INFO">3 out of 145 lines matched</msg>
+<msg timestamp="20221207 11:42:52.862" level="INFO">${get_qa_results_lines_partial_1} = 20221107,032_EMR_314_524_STP,-1482.142342,2.86838,0.694255,1.266377,2.265028503,0,0,0.4269382231,18.975616,44.445812,0.4269382231,0.758783,6.046764,0.497754,1.310339,25.088112,220,31,37,0,3
+20221109,0...</msg>
+<status status="PASS" starttime="20221207 11:42:52.861" endtime="20221207 11:42:52.862"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{lines_qa_results}</var>
+<arg>${get_qa_results_lines}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:52.862" level="INFO">@{lines_qa_results} = [ 145 ]</msg>
+<status status="PASS" starttime="20221207 11:42:52.862" endtime="20221207 11:42:52.862"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{linenumber_qa_result}</var>
+<arg>${get_qa_results_linenumber}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:52.862" level="INFO">@{linenumber_qa_result} = [ 20221115,036_ORN_534_545_STP,11709.05373,1.967029,1.057591,1.312724,1.498433029,0.926673,0.926673,0.5099926846,22.549375,44.215095,0.5099926846,0.354306,3.392957,0.210785,0.554891,31.804089,155,42,4...</msg>
+<status status="PASS" starttime="20221207 11:42:52.862" endtime="20221207 11:42:52.862"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{multiple_qa_results_partial}</var>
+<arg>${get_qa_results_lines_partial}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:52.863" level="INFO">@{multiple_qa_results_partial} = [ DATE_FK,STOPE_NAME,TONNES_REMAINING,CU_PCT,U_KGT,S_PCT,CUS_PCT,GEOMET_CHL_PCT,SMR_CHL_PCT,FESIO2_MONTHY,FE_WEEKLY,SIO2_WEEKLY,FESIO2_WEEKLY,AU_GT,AG_GT,CO2_WT_PCT,SIDERITE_WT_PCT,SERICITE_WT_PCT,LIL...</msg>
+<status status="PASS" starttime="20221207 11:42:52.862" endtime="20221207 11:42:52.863"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{multiple_qa_results_partial_1}</var>
+<arg>${get_qa_results_lines_partial_1}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20221207 11:42:52.863" level="INFO">@{multiple_qa_results_partial_1} = [ 20221107,032_EMR_314_524_STP,-1482.142342,2.86838,0.694255,1.266377,2.265028503,0,0,0.4269382231,18.975616,44.445812,0.4269382231,0.758783,6.046764,0.497754,1.310339,25.088112,220,31,37,0,3
+20221109...</msg>
+<status status="PASS" starttime="20221207 11:42:52.863" endtime="20221207 11:42:52.863"/>
+</kw>
+<kw name="Get Variable Value" library="BuiltIn">
+<var>${raw}</var>
+<arg>${lines_raw_results}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<msg timestamp="20221207 11:42:52.864" level="INFO">${raw} = [145]</msg>
+<status status="PASS" starttime="20221207 11:42:52.863" endtime="20221207 11:42:52.864"/>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${raw}</arg>
+<arg>${lines_qa_results}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" starttime="20221207 11:42:52.864" endtime="20221207 11:42:52.864"/>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${linenumber_raw_result}</arg>
+<arg>${linenumber_qa_result}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" starttime="20221207 11:42:52.864" endtime="20221207 11:42:52.864"/>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${multiple_raw_results_partial}</arg>
+<arg>${multiple_qa_results_partial}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" starttime="20221207 11:42:52.864" endtime="20221207 11:42:52.865"/>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${multiple_raw_results_partial_1}</arg>
+<arg>${multiple_qa_results_partial_1}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" starttime="20221207 11:42:52.865" endtime="20221207 11:42:52.865"/>
+</kw>
+<kw name="Lists Should Be Equal" library="Collections">
+<arg>${raw_results_list}</arg>
+<arg>${qa_results_list}</arg>
+<doc>Fails if given lists are unequal.</doc>
+<status status="PASS" starttime="20221207 11:42:52.865" endtime="20221207 11:42:52.865"/>
+</kw>
+<status status="PASS" starttime="20221207 11:42:18.526" endtime="20221207 11:42:52.865"/>
+</kw>
+<status status="PASS" starttime="20221207 11:41:37.996" endtime="20221207 11:42:52.866"/>
+</test>
+<doc>Automation Testing Demo
+Settings, Test Cases, Variables and Keywords are all different modules
+'Test Cases' module consists of name of the test case and then business/custom keywords or you can also say child steps
+Under the 'Keywords' module &gt; business keywords mentioned in the 'Test Case' module needs to be tied up in the form of selenium library keywords</doc>
+<status status="PASS" starttime="20221207 11:40:55.962" endtime="20221207 11:42:52.868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Set Global Variable">Set Global Variable</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
